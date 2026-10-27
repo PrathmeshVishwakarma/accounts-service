@@ -1,0 +1,28 @@
+$ nosetests -v tests
+
+nose.config: INFO: Ignoring files matching ['^\\.', '^_', '^setup\\.py$']
+nose.plugins.cover: INFO: Coverage report will include only packages: ['service']
+Creating an account returns 201 and the account payload. ... ok
+Missing required fields return 400. ... ok
+Deleting an account removes it. ... ok
+Deleting a missing account returns 404. ... ok
+The health endpoint returns OK. ... ok
+Listing accounts returns every account. ... ok
+Listing an empty database returns an empty list. ... ok
+The model round-trips through from_dict/to_dict. ... ok
+Reading an existing account returns it. ... ok
+Reading a missing account returns 404. ... ok
+Updating an account persists the new values. ... ok
+Updating a missing account returns 404. ... ok
+
+Name                  Stmts   Miss  Cover   Missing
+---------------------------------------------------
+service/__init__.py      25      1    96%   45
+service/models.py        32      5    84%   40-43, 53
+service/routes.py        39      0   100%
+---------------------------------------------------
+TOTAL                    96      6    94%
+----------------------------------------------------------------------
+Ran 12 tests in 0.042s
+
+OK

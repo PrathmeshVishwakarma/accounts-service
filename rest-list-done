@@ -1,0 +1,4 @@
+$ curl -s http://localhost:8080/accounts
+
+[{"address":"123 Main St","date_joined":"2026-10-27T19:08:15.594075","email":"john.doe@example.com","id":1,"name":"John Doe","phone_number":"555-1234"},{"address":"456 Oak Ave","date_joined":"2026-10-27T19:08:21.197617","email":"jane.smith@example.com","id":2,"name":"Jane Smith","phone_number":"555-5678"}]
+

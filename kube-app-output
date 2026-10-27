@@ -1,0 +1,1 @@
+{"endpoints":{"accounts":"/accounts","health":"/health"},"service":"Accounts Microservice","status":"OK","version":"1.0"}

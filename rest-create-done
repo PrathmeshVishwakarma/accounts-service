@@ -1,0 +1,6 @@
+$ curl -s -X POST http://localhost:8080/accounts \
+    -H "Content-Type: application/json" \
+    -d '{"name": "John Doe", "email": "john.doe@example.com", "phone_number": "555-1234", "address": "123 Main St"}'
+
+{"address":"123 Main St","date_joined":"2026-10-27T19:08:15.594075","email":"john.doe@example.com","id":1,"name":"John Doe","phone_number":"555-1234"}
+

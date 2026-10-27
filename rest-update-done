@@ -1,0 +1,6 @@
+$ curl -s -X PUT http://localhost:8080/accounts/1 \
+    -H "Content-Type: application/json" \
+    -d '{"address": "789 Pine Rd", "phone_number": "555-9999"}'
+
+{"address":"789 Pine Rd","date_joined":"2026-10-27T19:08:15.594075","email":"john.doe@example.com","id":1,"name":"John Doe","phone_number":"555-9999"}
+
