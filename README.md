@@ -11,6 +11,7 @@ deployment to Kubernetes.
 - CI workflow: [`.github/workflows/ci-build.yaml`](.github/workflows/ci-build.yaml)
 - User stories: [`user-story.md`](user-story.md)
 - Kanban plan: [`docs/kanban.md`](docs/kanban.md)
+- Evidence guide: [`docs/evidence.md`](docs/evidence.md)
 
 ## Project details
 

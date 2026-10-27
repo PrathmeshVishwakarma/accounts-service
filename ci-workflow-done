@@ -1,0 +1,350 @@
+Lint and test	Set up job	﻿2026-10-27T19:16:53.4641445Z Current runner version: '2.338.0'
+Lint and test	Set up job	2026-10-27T19:16:53.4667290Z ##[group]Runner Image Provisioner
+Lint and test	Set up job	2026-10-27T19:16:53.4668162Z Hosted Compute Agent
+Lint and test	Set up job	2026-10-27T19:16:53.4668901Z Version: 20261021.618
+Lint and test	Set up job	2026-10-27T19:16:53.4669551Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+Lint and test	Set up job	2026-10-27T19:16:53.4670350Z Build Date: 2026-10-21T00:45:21Z
+Lint and test	Set up job	2026-10-27T19:16:53.4671103Z Worker ID: {7bd0daee-edc8-4ba5-b598-3fc63c87de50}
+Lint and test	Set up job	2026-10-27T19:16:53.4671835Z Region: westus
+Lint and test	Set up job	2026-10-27T19:16:53.4672784Z Cloud: Azure
+Lint and test	Set up job	2026-10-27T19:16:53.4673344Z ##[endgroup]
+Lint and test	Set up job	2026-10-27T19:16:53.4674916Z ##[group]Operating System
+Lint and test	Set up job	2026-10-27T19:16:53.4675695Z Ubuntu
+Lint and test	Set up job	2026-10-27T19:16:53.4676353Z 22.04.5
+Lint and test	Set up job	2026-10-27T19:16:53.4677021Z LTS
+Lint and test	Set up job	2026-10-27T19:16:53.4677617Z ##[endgroup]
+Lint and test	Set up job	2026-10-27T19:16:53.4678219Z ##[group]Runner Image
+Lint and test	Set up job	2026-10-27T19:16:53.4678985Z Image: ubuntu-22.04
+Lint and test	Set up job	2026-10-27T19:16:53.4679631Z Version: 20261012.322.1
+Lint and test	Set up job	2026-10-27T19:16:53.4680911Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20261012.322/images/ubuntu/Ubuntu2204-Readme.md
+Lint and test	Set up job	2026-10-27T19:16:53.4683040Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20261012.322
+Lint and test	Set up job	2026-10-27T19:16:53.4684145Z ##[endgroup]
+Lint and test	Set up job	2026-10-27T19:16:53.4685349Z ##[group]GITHUB_TOKEN Permissions
+Lint and test	Set up job	2026-10-27T19:16:53.4687538Z Contents: read
+Lint and test	Set up job	2026-10-27T19:16:53.4688504Z Metadata: read
+Lint and test	Set up job	2026-10-27T19:16:53.4689128Z Packages: read
+Lint and test	Set up job	2026-10-27T19:16:53.4689721Z ##[endgroup]
+Lint and test	Set up job	2026-10-27T19:16:53.4691817Z Secret source: Actions
+Lint and test	Set up job	2026-10-27T19:16:53.4693189Z Cache mode: write
+Lint and test	Set up job	2026-10-27T19:16:53.4694008Z Prepare workflow directory
+Lint and test	Set up job	2026-10-27T19:16:53.5059265Z Prepare all required actions
+Lint and test	Set up job	2026-10-27T19:16:53.5132531Z Getting action download info
+Lint and test	Set up job	2026-10-27T19:16:53.8578287Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Lint and test	Set up job	2026-10-27T19:16:53.9762794Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+Lint and test	Set up job	2026-10-27T19:16:54.1623660Z Complete job name: Lint and test
+Lint and test	Checkout repository	﻿2026-10-27T19:16:54.2500946Z ##[group]Run actions/checkout@v4
+Lint and test	Checkout repository	2026-10-27T19:16:54.2501831Z with:
+Lint and test	Checkout repository	2026-10-27T19:16:54.2502564Z   repository: PrathmeshVishwakarma/accounts-service
+Lint and test	Checkout repository	2026-10-27T19:16:54.2506511Z   token: ***
+Lint and test	Checkout repository	2026-10-27T19:16:54.2506926Z   ssh-strict: true
+Lint and test	Checkout repository	2026-10-27T19:16:54.2507344Z   ssh-user: git
+Lint and test	Checkout repository	2026-10-27T19:16:54.2507782Z   persist-credentials: true
+Lint and test	Checkout repository	2026-10-27T19:16:54.2508247Z   clean: true
+Lint and test	Checkout repository	2026-10-27T19:16:54.2508675Z   sparse-checkout-cone-mode: true
+Lint and test	Checkout repository	2026-10-27T19:16:54.2509184Z   fetch-depth: 1
+Lint and test	Checkout repository	2026-10-27T19:16:54.2509591Z   fetch-tags: false
+Lint and test	Checkout repository	2026-10-27T19:16:54.2510012Z   show-progress: true
+Lint and test	Checkout repository	2026-10-27T19:16:54.2510438Z   lfs: false
+Lint and test	Checkout repository	2026-10-27T19:16:54.2510821Z   submodules: false
+Lint and test	Checkout repository	2026-10-27T19:16:54.2511295Z   set-safe-directory: true
+Lint and test	Checkout repository	2026-10-27T19:16:54.2511793Z   allow-unsafe-pr-checkout: false
+Lint and test	Checkout repository	2026-10-27T19:16:54.2512721Z ##[endgroup]
+Lint and test	Checkout repository	2026-10-27T19:16:54.4736659Z Syncing repository: PrathmeshVishwakarma/accounts-service
+Lint and test	Checkout repository	2026-10-27T19:16:54.4739517Z ##[group]Getting Git version info
+Lint and test	Checkout repository	2026-10-27T19:16:54.4740921Z Working directory is '/home/runner/work/accounts-service/accounts-service'
+Lint and test	Checkout repository	2026-10-27T19:16:54.4743454Z [command]/usr/bin/git version
+Lint and test	Checkout repository	2026-10-27T19:16:54.4817501Z git version 2.55.0
+Lint and test	Checkout repository	2026-10-27T19:16:54.4842292Z ##[endgroup]
+Lint and test	Checkout repository	2026-10-27T19:16:54.4856135Z Temporarily overriding HOME='/home/runner/work/_temp/7ff12157-3bec-4426-8c01-c4b33feea60a' before making global git config changes
+Lint and test	Checkout repository	2026-10-27T19:16:54.4858446Z Adding repository directory to the temporary git global config as a safe directory
+Lint and test	Checkout repository	2026-10-27T19:16:54.4860775Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/accounts-service/accounts-service
+Lint and test	Checkout repository	2026-10-27T19:16:54.4905935Z Deleting the contents of '/home/runner/work/accounts-service/accounts-service'
+Lint and test	Checkout repository	2026-10-27T19:16:54.4911534Z ##[group]Initializing the repository
+Lint and test	Checkout repository	2026-10-27T19:16:54.4917525Z [command]/usr/bin/git init /home/runner/work/accounts-service/accounts-service
+Lint and test	Checkout repository	2026-10-27T19:16:54.5027185Z hint: Using 'master' as the name for the initial branch. This default branch name
+Lint and test	Checkout repository	2026-10-27T19:16:54.5030680Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Lint and test	Checkout repository	2026-10-27T19:16:54.5032815Z hint: to use in all of your new repositories, which will suppress this warning,
+Lint and test	Checkout repository	2026-10-27T19:16:54.5034325Z hint: call:
+Lint and test	Checkout repository	2026-10-27T19:16:54.5035215Z hint:
+Lint and test	Checkout repository	2026-10-27T19:16:54.5036270Z hint: 	git config --global init.defaultBranch <name>
+Lint and test	Checkout repository	2026-10-27T19:16:54.5037445Z hint:
+Lint and test	Checkout repository	2026-10-27T19:16:54.5038592Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Lint and test	Checkout repository	2026-10-27T19:16:54.5040418Z hint: 'development'. The just-created branch can be renamed via this command:
+Lint and test	Checkout repository	2026-10-27T19:16:54.5041887Z hint:
+Lint and test	Checkout repository	2026-10-27T19:16:54.5042989Z hint: 	git branch -m <name>
+Lint and test	Checkout repository	2026-10-27T19:16:54.5044000Z hint:
+Lint and test	Checkout repository	2026-10-27T19:16:54.5044998Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Lint and test	Checkout repository	2026-10-27T19:16:54.5047230Z Initialized empty Git repository in /home/runner/work/accounts-service/accounts-service/.git/
+Lint and test	Checkout repository	2026-10-27T19:16:54.5050775Z [command]/usr/bin/git remote add origin https://github.com/PrathmeshVishwakarma/accounts-service
+Lint and test	Checkout repository	2026-10-27T19:16:54.5081546Z ##[endgroup]
+Lint and test	Checkout repository	2026-10-27T19:16:54.5083148Z ##[group]Disabling automatic garbage collection
+Lint and test	Checkout repository	2026-10-27T19:16:54.5086339Z [command]/usr/bin/git config --local gc.auto 0
+Lint and test	Checkout repository	2026-10-27T19:16:54.5123773Z ##[endgroup]
+Lint and test	Checkout repository	2026-10-27T19:16:54.5125119Z ##[group]Setting up auth
+Lint and test	Checkout repository	2026-10-27T19:16:54.5131303Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint and test	Checkout repository	2026-10-27T19:16:54.5168839Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint and test	Checkout repository	2026-10-27T19:16:54.5640757Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint and test	Checkout repository	2026-10-27T19:16:54.5694378Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint and test	Checkout repository	2026-10-27T19:16:54.5997326Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint and test	Checkout repository	2026-10-27T19:16:54.6038181Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint and test	Checkout repository	2026-10-27T19:16:54.6301175Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Lint and test	Checkout repository	2026-10-27T19:16:54.6346179Z ##[endgroup]
+Lint and test	Checkout repository	2026-10-27T19:16:54.6347177Z ##[group]Fetching the repository
+Lint and test	Checkout repository	2026-10-27T19:16:54.6356515Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5dc80072525037bf684f7c5b9e357ecba0b1c259:refs/remotes/origin/main
+Lint and test	Checkout repository	2026-10-27T19:16:55.0997180Z From https://github.com/PrathmeshVishwakarma/accounts-service
+Lint and test	Checkout repository	2026-10-27T19:16:55.0999046Z  * [new ref]         5dc80072525037bf684f7c5b9e357ecba0b1c259 -> origin/main
+Lint and test	Checkout repository	2026-10-27T19:16:55.1003647Z ##[endgroup]
+Lint and test	Checkout repository	2026-10-27T19:16:55.1005247Z ##[group]Determining the checkout info
+Lint and test	Checkout repository	2026-10-27T19:16:55.1007233Z ##[endgroup]
+Lint and test	Checkout repository	2026-10-27T19:16:55.1014614Z [command]/usr/bin/git sparse-checkout disable
+Lint and test	Checkout repository	2026-10-27T19:16:55.1068601Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Lint and test	Checkout repository	2026-10-27T19:16:55.1115653Z ##[group]Checking out the ref
+Lint and test	Checkout repository	2026-10-27T19:16:55.1118432Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Lint and test	Checkout repository	2026-10-27T19:16:55.1189937Z Switched to a new branch 'main'
+Lint and test	Checkout repository	2026-10-27T19:16:55.1194571Z branch 'main' set up to track 'origin/main'.
+Lint and test	Checkout repository	2026-10-27T19:16:55.1199704Z ##[endgroup]
+Lint and test	Checkout repository	2026-10-27T19:16:55.1243678Z [command]/usr/bin/git log -1 --format=%H
+Lint and test	Checkout repository	2026-10-27T19:16:55.1274105Z 5dc80072525037bf684f7c5b9e357ecba0b1c259
+Lint and test	Set up Python 3.9	﻿2026-10-27T19:16:55.1579990Z ##[group]Run actions/setup-python@v5
+Lint and test	Set up Python 3.9	2026-10-27T19:16:55.1580726Z with:
+Lint and test	Set up Python 3.9	2026-10-27T19:16:55.1581170Z   python-version: 3.9
+Lint and test	Set up Python 3.9	2026-10-27T19:16:55.1581682Z   check-latest: false
+Lint and test	Set up Python 3.9	2026-10-27T19:16:55.1585967Z   token: ***
+Lint and test	Set up Python 3.9	2026-10-27T19:16:55.1586720Z   update-environment: true
+Lint and test	Set up Python 3.9	2026-10-27T19:16:55.1587266Z   allow-prereleases: false
+Lint and test	Set up Python 3.9	2026-10-27T19:16:55.1587777Z   freethreaded: false
+Lint and test	Set up Python 3.9	2026-10-27T19:16:55.1588262Z ##[endgroup]
+Lint and test	Set up Python 3.9	2026-10-27T19:16:55.3022495Z ##[group]Installed versions
+Lint and test	Set up Python 3.9	2026-10-27T19:16:55.3106539Z Version 3.9 was not found in the local cache
+Lint and test	Set up Python 3.9	2026-10-27T19:16:55.3260248Z (node:2033) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Lint and test	Set up Python 3.9	2026-10-27T19:16:55.3263100Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Lint and test	Set up Python 3.9	2026-10-27T19:16:56.1121221Z Version 3.9 is available for downloading
+Lint and test	Set up Python 3.9	2026-10-27T19:16:56.1122330Z Download from "https://github.com/actions/python-versions/releases/download/3.9.25-19039189640/python-3.9.25-linux-22.04-x64.tar.gz"
+Lint and test	Set up Python 3.9	2026-10-27T19:16:56.7858189Z Extract downloaded archive
+Lint and test	Set up Python 3.9	2026-10-27T19:16:56.8023554Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/aa46cea5-202b-4f27-995e-816b3d8b2eb1 -f /home/runner/work/_temp/414d08d8-a697-490e-8417-e673ab820f22
+Lint and test	Set up Python 3.9	2026-10-27T19:16:58.1915880Z Execute installation script
+Lint and test	Set up Python 3.9	2026-10-27T19:16:58.2021419Z Check if Python hostedtoolcache folder exist...
+Lint and test	Set up Python 3.9	2026-10-27T19:16:58.2022490Z Create Python 3.9.25 folder
+Lint and test	Set up Python 3.9	2026-10-27T19:16:58.2048276Z Copy Python binaries to hostedtoolcache folder
+Lint and test	Set up Python 3.9	2026-10-27T19:16:58.7589070Z Create additional symlinks (Required for the UsePythonVersion Azure Pipelines task and the setup-python GitHub Action)
+Lint and test	Set up Python 3.9	2026-10-27T19:16:58.7637161Z Upgrading pip...
+Lint and test	Set up Python 3.9	2026-10-27T19:17:01.0813322Z Looking in links: /tmp/tmp289krubs
+Lint and test	Set up Python 3.9	2026-10-27T19:17:01.0819337Z Requirement already satisfied: setuptools in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (79.0.1)
+Lint and test	Set up Python 3.9	2026-10-27T19:17:01.0824976Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (23.0.1)
+Lint and test	Set up Python 3.9	2026-10-27T19:17:02.4077922Z Collecting pip
+Lint and test	Set up Python 3.9	2026-10-27T19:17:02.4991913Z Downloading pip-26.0.1-py3-none-any.whl (1.8 MB)
+Lint and test	Set up Python 3.9	2026-10-27T19:17:02.6089509Z ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 16.7 MB/s eta 0:00:00
+Lint and test	Set up Python 3.9	2026-10-27T19:17:02.6113053Z 
+Lint and test	Set up Python 3.9	2026-10-27T19:17:02.6694390Z Installing collected packages: pip
+Lint and test	Set up Python 3.9	2026-10-27T19:17:02.6699747Z Attempting uninstall: pip
+Lint and test	Set up Python 3.9	2026-10-27T19:17:02.6703818Z Found existing installation: pip 23.0.1
+Lint and test	Set up Python 3.9	2026-10-27T19:17:02.8625767Z Uninstalling pip-23.0.1:
+Lint and test	Set up Python 3.9	2026-10-27T19:17:02.8700077Z Successfully uninstalled pip-23.0.1
+Lint and test	Set up Python 3.9	2026-10-27T19:17:03.7514092Z Successfully installed pip-26.0.1
+Lint and test	Set up Python 3.9	2026-10-27T19:17:03.8020266Z Create complete file
+Lint and test	Set up Python 3.9	2026-10-27T19:17:03.8069437Z Successfully set up CPython (3.9.25)
+Lint and test	Set up Python 3.9	2026-10-27T19:17:03.8070884Z ##[endgroup]
+Lint and test	Install dependencies	﻿2026-10-27T19:17:03.8250646Z ##[group]Run python -m pip install --upgrade pip
+Lint and test	Install dependencies	2026-10-27T19:17:03.8251141Z ^[[36;1mpython -m pip install --upgrade pip^[[0m
+Lint and test	Install dependencies	2026-10-27T19:17:03.8251484Z ^[[36;1mpip install -r requirements.txt^[[0m
+Lint and test	Install dependencies	2026-10-27T19:17:03.8251805Z ^[[36;1mpip install -r requirements-dev.txt^[[0m
+Lint and test	Install dependencies	2026-10-27T19:17:03.8591586Z shell: /usr/bin/bash -e {0}
+Lint and test	Install dependencies	2026-10-27T19:17:03.8592096Z env:
+Lint and test	Install dependencies	2026-10-27T19:17:03.8592391Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+Lint and test	Install dependencies	2026-10-27T19:17:03.8592878Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+Lint and test	Install dependencies	2026-10-27T19:17:03.8593332Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+Lint and test	Install dependencies	2026-10-27T19:17:03.8593737Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+Lint and test	Install dependencies	2026-10-27T19:17:03.8594123Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+Lint and test	Install dependencies	2026-10-27T19:17:03.8594511Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+Lint and test	Install dependencies	2026-10-27T19:17:03.8594838Z ##[endgroup]
+Lint and test	Install dependencies	2026-10-27T19:17:04.2076819Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (26.0.1)
+Lint and test	Install dependencies	2026-10-27T19:17:04.8159946Z Collecting Flask==2.1.3 (from -r requirements.txt (line 1))
+Lint and test	Install dependencies	2026-10-27T19:17:04.8572152Z   Downloading Flask-2.1.3-py3-none-any.whl.metadata (3.9 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:04.8838009Z Collecting Werkzeug==2.1.2 (from -r requirements.txt (line 2))
+Lint and test	Install dependencies	2026-10-27T19:17:04.8882440Z   Downloading Werkzeug-2.1.2-py3-none-any.whl.metadata (4.4 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:04.9033898Z Collecting Jinja2==3.1.4 (from -r requirements.txt (line 3))
+Lint and test	Install dependencies	2026-10-27T19:17:04.9067274Z   Downloading jinja2-3.1.4-py3-none-any.whl.metadata (2.6 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:04.9205041Z Collecting Flask-SQLAlchemy==2.5.1 (from -r requirements.txt (line 4))
+Lint and test	Install dependencies	2026-10-27T19:17:04.9239774Z   Downloading Flask_SQLAlchemy-2.5.1-py2.py3-none-any.whl.metadata (3.1 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.3536228Z Collecting SQLAlchemy==1.4.46 (from -r requirements.txt (line 5))
+Lint and test	Install dependencies	2026-10-27T19:17:05.3585372Z   Downloading SQLAlchemy-1.4.46-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (10 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.3931608Z Collecting Flask-Cors==3.0.10 (from -r requirements.txt (line 6))
+Lint and test	Install dependencies	2026-10-27T19:17:05.3976846Z   Downloading Flask_Cors-3.0.10-py2.py3-none-any.whl.metadata (5.4 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.4103341Z Collecting flask-talisman==1.0.0 (from -r requirements.txt (line 7))
+Lint and test	Install dependencies	2026-10-27T19:17:05.4150637Z   Downloading flask_talisman-1.0.0-py2.py3-none-any.whl.metadata (18 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.5139729Z Collecting psycopg2-binary==2.9.9 (from -r requirements.txt (line 8))
+Lint and test	Install dependencies	2026-10-27T19:17:05.5190697Z   Downloading psycopg2_binary-2.9.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.4 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.5375288Z Collecting gunicorn==21.2.0 (from -r requirements.txt (line 9))
+Lint and test	Install dependencies	2026-10-27T19:17:05.5412818Z   Downloading gunicorn-21.2.0-py3-none-any.whl.metadata (4.1 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.5604306Z Collecting itsdangerous>=2.0 (from Flask==2.1.3->-r requirements.txt (line 1))
+Lint and test	Install dependencies	2026-10-27T19:17:05.5650349Z   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.5845224Z Collecting click>=8.0 (from Flask==2.1.3->-r requirements.txt (line 1))
+Lint and test	Install dependencies	2026-10-27T19:17:05.5885284Z   Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.6216213Z Collecting importlib-metadata>=3.6.0 (from Flask==2.1.3->-r requirements.txt (line 1))
+Lint and test	Install dependencies	2026-10-27T19:17:05.6262820Z   Downloading importlib_metadata-8.7.1-py3-none-any.whl.metadata (4.7 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.6999496Z Collecting MarkupSafe>=2.0 (from Jinja2==3.1.4->-r requirements.txt (line 3))
+Lint and test	Install dependencies	2026-10-27T19:17:05.7033265Z   Downloading markupsafe-3.0.4-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.9096304Z Collecting greenlet!=0.4.17 (from SQLAlchemy==1.4.46->-r requirements.txt (line 5))
+Lint and test	Install dependencies	2026-10-27T19:17:05.9137276Z   Downloading greenlet-3.2.5-cp39-cp39-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (4.1 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.9304970Z Collecting Six (from Flask-Cors==3.0.10->-r requirements.txt (line 6))
+Lint and test	Install dependencies	2026-10-27T19:17:05.9339334Z   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.9535575Z Collecting packaging (from gunicorn==21.2.0->-r requirements.txt (line 9))
+Lint and test	Install dependencies	2026-10-27T19:17:05.9573089Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.9774982Z Collecting zipp>=3.20 (from importlib-metadata>=3.6.0->Flask==2.1.3->-r requirements.txt (line 1))
+Lint and test	Install dependencies	2026-10-27T19:17:05.9807233Z   Downloading zipp-3.23.1-py3-none-any.whl.metadata (3.6 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.9914410Z Downloading Flask-2.1.3-py3-none-any.whl (95 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:05.9996452Z Downloading Werkzeug-2.1.2-py3-none-any.whl (224 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.0057457Z Downloading jinja2-3.1.4-py3-none-any.whl (133 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.0116645Z Downloading Flask_SQLAlchemy-2.5.1-py2.py3-none-any.whl (17 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.0181771Z Downloading SQLAlchemy-1.4.46-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.0486280Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 56.2 MB/s  0:00:00
+Lint and test	Install dependencies	2026-10-27T19:17:06.0528357Z Downloading Flask_Cors-3.0.10-py2.py3-none-any.whl (14 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.0592666Z Downloading flask_talisman-1.0.0-py2.py3-none-any.whl (18 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.0656274Z Downloading psycopg2_binary-2.9.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.0878091Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 169.2 MB/s  0:00:00
+Lint and test	Install dependencies	2026-10-27T19:17:06.0922294Z Downloading gunicorn-21.2.0-py3-none-any.whl (80 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.0984534Z Downloading click-8.1.8-py3-none-any.whl (98 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.1067770Z Downloading greenlet-3.2.5-cp39-cp39-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (587 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.1129376Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 587.5/587.5 kB 91.0 MB/s  0:00:00
+Lint and test	Install dependencies	2026-10-27T19:17:06.1168615Z Downloading importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.1231598Z Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.1289969Z Downloading markupsafe-3.0.4-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (20 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.1345448Z Downloading zipp-3.23.1-py3-none-any.whl (10 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.1400184Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.1461405Z Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:06.2190811Z Installing collected packages: flask-talisman, zipp, Werkzeug, Six, psycopg2-binary, packaging, MarkupSafe, itsdangerous, greenlet, click, SQLAlchemy, Jinja2, importlib-metadata, gunicorn, Flask, Flask-SQLAlchemy, Flask-Cors
+Lint and test	Install dependencies	2026-10-27T19:17:07.5550986Z 
+Lint and test	Install dependencies	2026-10-27T19:17:07.5591605Z Successfully installed Flask-2.1.3 Flask-Cors-3.0.10 Flask-SQLAlchemy-2.5.1 Jinja2-3.1.4 MarkupSafe-3.0.4 SQLAlchemy-1.4.46 Six-1.17.0 Werkzeug-2.1.2 click-8.1.8 flask-talisman-1.0.0 greenlet-3.2.5 gunicorn-21.2.0 importlib-metadata-8.7.1 itsdangerous-2.2.0 packaging-26.3 psycopg2-binary-2.9.9 zipp-3.23.1
+Lint and test	Install dependencies	2026-10-27T19:17:08.6296969Z Collecting coverage==6.5.0 (from -r requirements-dev.txt (line 1))
+Lint and test	Install dependencies	2026-10-27T19:17:08.6668977Z   Downloading coverage-6.5.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.8 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:08.6905882Z Collecting flake8==6.1.0 (from -r requirements-dev.txt (line 2))
+Lint and test	Install dependencies	2026-10-27T19:17:08.6957436Z   Downloading flake8-6.1.0-py2.py3-none-any.whl.metadata (3.8 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:08.7086538Z Collecting nose==1.3.7 (from -r requirements-dev.txt (line 3))
+Lint and test	Install dependencies	2026-10-27T19:17:08.7134086Z   Downloading nose-1.3.7-py3-none-any.whl.metadata (1.7 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:08.7496361Z Collecting pylint==2.17.7 (from -r requirements-dev.txt (line 4))
+Lint and test	Install dependencies	2026-10-27T19:17:08.7551754Z   Downloading pylint-2.17.7-py3-none-any.whl.metadata (12 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:08.7891047Z Collecting pytest==7.4.4 (from -r requirements-dev.txt (line 5))
+Lint and test	Install dependencies	2026-10-27T19:17:08.7927694Z   Downloading pytest-7.4.4-py3-none-any.whl.metadata (7.9 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:08.8060511Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8==6.1.0->-r requirements-dev.txt (line 2))
+Lint and test	Install dependencies	2026-10-27T19:17:08.8097522Z   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:08.8241318Z Collecting pycodestyle<2.12.0,>=2.11.0 (from flake8==6.1.0->-r requirements-dev.txt (line 2))
+Lint and test	Install dependencies	2026-10-27T19:17:08.8296855Z   Downloading pycodestyle-2.11.1-py2.py3-none-any.whl.metadata (4.5 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:08.8455656Z Collecting pyflakes<3.2.0,>=3.1.0 (from flake8==6.1.0->-r requirements-dev.txt (line 2))
+Lint and test	Install dependencies	2026-10-27T19:17:08.8508135Z   Downloading pyflakes-3.1.0-py2.py3-none-any.whl.metadata (3.5 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:08.8768990Z Collecting platformdirs>=2.2.0 (from pylint==2.17.7->-r requirements-dev.txt (line 4))
+Lint and test	Install dependencies	2026-10-27T19:17:08.8808527Z   Downloading platformdirs-4.4.0-py3-none-any.whl.metadata (12 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:08.9187160Z Collecting astroid<=2.17.0-dev0,>=2.15.8 (from pylint==2.17.7->-r requirements-dev.txt (line 4))
+Lint and test	Install dependencies	2026-10-27T19:17:08.9233358Z   Downloading astroid-2.15.8-py3-none-any.whl.metadata (4.7 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:08.9744756Z Collecting isort<6,>=4.2.5 (from pylint==2.17.7->-r requirements-dev.txt (line 4))
+Lint and test	Install dependencies	2026-10-27T19:17:08.9784200Z   Downloading isort-5.13.2-py3-none-any.whl.metadata (12 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:08.9983430Z Collecting tomlkit>=0.10.1 (from pylint==2.17.7->-r requirements-dev.txt (line 4))
+Lint and test	Install dependencies	2026-10-27T19:17:09.0020066Z   Downloading tomlkit-0.15.2-py3-none-any.whl.metadata (3.4 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.0212731Z Collecting typing-extensions>=3.10.0 (from pylint==2.17.7->-r requirements-dev.txt (line 4))
+Lint and test	Install dependencies	2026-10-27T19:17:09.0251563Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.0387657Z Collecting dill>=0.2 (from pylint==2.17.7->-r requirements-dev.txt (line 4))
+Lint and test	Install dependencies	2026-10-27T19:17:09.0426893Z   Downloading dill-0.4.1-py3-none-any.whl.metadata (10 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.0777177Z Collecting tomli>=1.1.0 (from pylint==2.17.7->-r requirements-dev.txt (line 4))
+Lint and test	Install dependencies	2026-10-27T19:17:09.0814617Z   Downloading tomli-2.5.0-py3-none-any.whl.metadata (10 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.0923920Z Collecting iniconfig (from pytest==7.4.4->-r requirements-dev.txt (line 5))
+Lint and test	Install dependencies	2026-10-27T19:17:09.0975207Z   Downloading iniconfig-2.1.0-py3-none-any.whl.metadata (2.7 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.1015944Z Requirement already satisfied: packaging in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages (from pytest==7.4.4->-r requirements-dev.txt (line 5)) (26.3)
+Lint and test	Install dependencies	2026-10-27T19:17:09.1145228Z Collecting pluggy<2.0,>=0.12 (from pytest==7.4.4->-r requirements-dev.txt (line 5))
+Lint and test	Install dependencies	2026-10-27T19:17:09.1181114Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.1321762Z Collecting exceptiongroup>=1.0.0rc8 (from pytest==7.4.4->-r requirements-dev.txt (line 5))
+Lint and test	Install dependencies	2026-10-27T19:17:09.1357735Z   Downloading exceptiongroup-1.3.1-py3-none-any.whl.metadata (6.7 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.1836702Z Collecting lazy-object-proxy>=1.4.0 (from astroid<=2.17.0-dev0,>=2.15.8->pylint==2.17.7->-r requirements-dev.txt (line 4))
+Lint and test	Install dependencies	2026-10-27T19:17:09.1901710Z   Downloading lazy_object_proxy-1.12.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.1 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.6784733Z Collecting wrapt<2,>=1.11 (from astroid<=2.17.0-dev0,>=2.15.8->pylint==2.17.7->-r requirements-dev.txt (line 4))
+Lint and test	Install dependencies	2026-10-27T19:17:09.6845447Z   Downloading wrapt-1.17.3-cp39-cp39-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.4 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.7085641Z Downloading coverage-6.5.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (212 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.7171266Z Downloading flake8-6.1.0-py2.py3-none-any.whl (58 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.7259409Z Downloading nose-1.3.7-py3-none-any.whl (154 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.7345593Z Downloading pylint-2.17.7-py3-none-any.whl (537 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.7435925Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 537.2/537.2 kB 47.0 MB/s  0:00:00
+Lint and test	Install dependencies	2026-10-27T19:17:09.7476052Z Downloading pytest-7.4.4-py3-none-any.whl (325 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.7560125Z Downloading astroid-2.15.8-py3-none-any.whl (278 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.7689529Z Downloading isort-5.13.2-py3-none-any.whl (92 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.7760228Z Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.7814619Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.7867426Z Downloading pycodestyle-2.11.1-py2.py3-none-any.whl (31 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.7924810Z Downloading pyflakes-3.1.0-py2.py3-none-any.whl (62 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.7985834Z Downloading wrapt-1.17.3-cp39-cp39-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (81 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.8041661Z Downloading dill-0.4.1-py3-none-any.whl (120 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.8103021Z Downloading exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.8169770Z Downloading lazy_object_proxy-1.12.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (66 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.8235488Z Downloading platformdirs-4.4.0-py3-none-any.whl (18 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.8290205Z Downloading tomli-2.5.0-py3-none-any.whl (14 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.8349439Z Downloading tomlkit-0.15.2-py3-none-any.whl (52 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.8408864Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.8472352Z Downloading iniconfig-2.1.0-py3-none-any.whl (6.0 kB)
+Lint and test	Install dependencies	2026-10-27T19:17:09.9350410Z Installing collected packages: nose, wrapt, typing-extensions, tomlkit, tomli, pyflakes, pycodestyle, pluggy, platformdirs, mccabe, lazy-object-proxy, isort, iniconfig, dill, coverage, flake8, exceptiongroup, astroid, pytest, pylint
+Lint and test	Install dependencies	2026-10-27T19:17:11.1711520Z 
+Lint and test	Install dependencies	2026-10-27T19:17:11.1778195Z Successfully installed astroid-2.15.8 coverage-6.5.0 dill-0.4.1 exceptiongroup-1.3.1 flake8-6.1.0 iniconfig-2.1.0 isort-5.13.2 lazy-object-proxy-1.12.0 mccabe-0.7.0 nose-1.3.7 platformdirs-4.4.0 pluggy-1.6.0 pycodestyle-2.11.1 pyflakes-3.1.0 pylint-2.17.7 pytest-7.4.4 tomli-2.5.0 tomlkit-0.15.2 typing-extensions-4.16.0 wrapt-1.17.3
+Lint and test	Lint with flake8	﻿2026-10-27T19:17:11.3328126Z ##[group]Run flake8 service tests
+Lint and test	Lint with flake8	2026-10-27T19:17:11.3328529Z ^[[36;1mflake8 service tests^[[0m
+Lint and test	Lint with flake8	2026-10-27T19:17:11.3403962Z shell: /usr/bin/bash -e {0}
+Lint and test	Lint with flake8	2026-10-27T19:17:11.3404275Z env:
+Lint and test	Lint with flake8	2026-10-27T19:17:11.3404621Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+Lint and test	Lint with flake8	2026-10-27T19:17:11.3405178Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+Lint and test	Lint with flake8	2026-10-27T19:17:11.3405722Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+Lint and test	Lint with flake8	2026-10-27T19:17:11.3406211Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+Lint and test	Lint with flake8	2026-10-27T19:17:11.3406693Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+Lint and test	Lint with flake8	2026-10-27T19:17:11.3407180Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+Lint and test	Lint with flake8	2026-10-27T19:17:11.3407590Z ##[endgroup]
+Lint and test	Lint with flake8	2026-10-27T19:17:11.5900318Z 0
+Lint and test	Run unit tests with nosetests	﻿2026-10-27T19:17:11.6088824Z ##[group]Run nosetests -v tests
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:11.6089172Z ^[[36;1mnosetests -v tests^[[0m
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:11.6168548Z shell: /usr/bin/bash -e {0}
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:11.6168868Z env:
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:11.6169202Z   pythonLocation: /opt/hostedtoolcache/Python/3.9.25/x64
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:11.6169783Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib/pkgconfig
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:11.6170335Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:11.6170852Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:11.6171393Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.25/x64
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:11.6172157Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.25/x64/lib
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:11.6172621Z ##[endgroup]
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:11.8299750Z nose.config: INFO: Ignoring files matching ['^\\.', '^_', '^setup\\.py$']
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:11.8630149Z nose.plugins.cover: INFO: Coverage report will include only packages: ['service']
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2218979Z Creating an account returns 201 and the account payload. ... ok
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2250150Z Missing required fields return 400. ... ok
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2352126Z Deleting an account removes it. ... ok
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2388929Z Deleting a missing account returns 404. ... ok
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2416132Z The health endpoint returns OK. ... ok
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2507547Z Listing accounts returns every account. ... ok
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2541609Z Listing an empty database returns an empty list. ... ok
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2558488Z The model round-trips through from_dict/to_dict. ... ok
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2619445Z Reading an existing account returns it. ... ok
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2654818Z Reading a missing account returns 404. ... ok
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2735409Z Updating an account persists the new values. ... ok
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2771413Z Updating a missing account returns 404. ... ok
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2772638Z 
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2951847Z Name                  Stmts   Miss  Cover   Missing
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2952810Z ---------------------------------------------------
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2953517Z service/__init__.py      25      1    96%   45
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2954223Z service/models.py        32      5    84%   40-43, 53
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2954774Z service/routes.py        39      0   100%
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2955173Z ---------------------------------------------------
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.2955494Z TOTAL                    96      6    94%
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.3190710Z ----------------------------------------------------------------------
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.3191438Z Ran 12 tests in 0.086s
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.3191733Z 
+Lint and test	Run unit tests with nosetests	2026-10-27T19:17:12.3192131Z OK
+Lint and test	Post Set up Python 3.9	﻿2026-10-27T19:17:12.3766716Z Post job cleanup.
+Lint and test	Post Set up Python 3.9	2026-10-27T19:17:12.5042990Z (node:2140) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Lint and test	Post Set up Python 3.9	2026-10-27T19:17:12.5043987Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Lint and test	Post Checkout repository	﻿2026-10-27T19:17:12.5313632Z Post job cleanup.
+Lint and test	Post Checkout repository	2026-10-27T19:17:12.6244164Z [command]/usr/bin/git version
+Lint and test	Post Checkout repository	2026-10-27T19:17:12.6290677Z git version 2.55.0
+Lint and test	Post Checkout repository	2026-10-27T19:17:12.6335709Z Temporarily overriding HOME='/home/runner/work/_temp/df7de9b4-bb5d-4bc9-9d2b-3201ebb1ca1e' before making global git config changes
+Lint and test	Post Checkout repository	2026-10-27T19:17:12.6337109Z Adding repository directory to the temporary git global config as a safe directory
+Lint and test	Post Checkout repository	2026-10-27T19:17:12.6342226Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/accounts-service/accounts-service
+Lint and test	Post Checkout repository	2026-10-27T19:17:12.6386105Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint and test	Post Checkout repository	2026-10-27T19:17:12.6436522Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint and test	Post Checkout repository	2026-10-27T19:17:12.6740968Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint and test	Post Checkout repository	2026-10-27T19:17:12.6772582Z http.https://github.com/.extraheader
+Lint and test	Post Checkout repository	2026-10-27T19:17:12.6785584Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Lint and test	Post Checkout repository	2026-10-27T19:17:12.6836338Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint and test	Post Checkout repository	2026-10-27T19:17:12.7161458Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint and test	Post Checkout repository	2026-10-27T19:17:12.7204710Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint and test	Complete job	﻿2026-10-27T19:17:12.7687314Z Cleaning up orphan processes
+Lint and test	Complete job	2026-10-27T19:17:12.8072642Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
