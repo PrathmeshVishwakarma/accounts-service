@@ -1,13 +1,13 @@
-# Accounts Microservice
+# DevOps Capstone
 
-[![CI](https://github.com/PrathmeshVishwakarma/accounts-service/actions/workflows/ci-build.yaml/badge.svg)](https://github.com/PrathmeshVishwakarma/accounts-service/actions/workflows/ci-build.yaml)
+[![CI](https://github.com/PrathmeshVishwakarma/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)](https://github.com/PrathmeshVishwakarma/devops-capstone-project/actions/workflows/ci-build.yaml)
 
 A RESTful **Customer Accounts** microservice built with Python and Flask. The
 service exposes CRUD operations for customer accounts, persists data with
 SQLAlchemy, ships with automated unit tests, and is containerized for
 deployment to Kubernetes.
 
-- Public repository: <https://github.com/PrathmeshVishwakarma/accounts-service>
+- Public repository: <https://github.com/PrathmeshVishwakarma/devops-capstone-project>
 - CI workflow: [`.github/workflows/ci-build.yaml`](.github/workflows/ci-build.yaml)
 - User stories: [`user-story.md`](user-story.md)
 - Kanban plan: [`docs/kanban.md`](docs/kanban.md)
@@ -17,7 +17,7 @@ deployment to Kubernetes.
 
 | Field | Value |
 | --- | --- |
-| Project name | **accounts-service** |
+| Project name | **DevOps Capstone** |
 | Service | Customer Accounts microservice |
 | Runtime | Python 3.9 / Flask 2.1 |
 | Database | SQLite (development), PostgreSQL (production) |
